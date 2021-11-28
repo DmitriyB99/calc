@@ -9,7 +9,15 @@ var btn = document.querySelector("#btn"),
   ved = document.querySelector("#ved"),
   another = document.querySelector("#another"),
   torg = document.querySelector("#torg"),
-  count = document.querySelector("#count");
+  count = document.querySelector("#count"),
+  rachchet = document.querySelector("#rachchet"),
+  postuptovar = document.querySelector("#postuptovar"),
+  realizetovar = document.querySelector("#realizetovar"),
+  pos = document.querySelector("#pos"),
+  avans = document.querySelector("#avans"),
+  kkm = document.querySelector("#kkm"),
+  otchrealiz = document.querySelector("#otchrealiz"),
+  btn2 = document.querySelector("#btn2");
 
 // Basic function
 btn.onclick = function () {
@@ -74,3 +82,17 @@ btn.onclick = function () {
     count.value * 20000;
   out.innerHTML = sum;
 };
+
+btn2.onclick = () => {
+
+
+    let sum2 = rachchet.value * 5000 +
+    postuptovar.value * 520 +
+    realizetovar.value * 520 +
+    pos.value * 5000 +
+    avans.value * 1000+
+    kkm.value * 5000 +
+    otchrealiz.value * 5000
+    
+    out2.innerHTML = sum2;
+}
